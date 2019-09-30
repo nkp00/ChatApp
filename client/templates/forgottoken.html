@@ -1,0 +1,12 @@
+
+    <h4>Create New password</h4>
+    <div id="div1" ng-controller='chatCtrl as ctrl'>  
+        <form>
+            NewPassword </br><input ng-model="ctrl.password" type="password" name="newpassword"
+                placeholder="New password" required> </br></br>
+            Confirm Password </br><input ng-model="ctrl.confirmPassword" type="password" name="confirmPassword"
+                placeholder="Confirm password" required> </br></br>
+            <button ng-click="ctrl.forgotId(ctrl.password,ctrl.confirmPassword)">Reset</button>
+        </form>
+        {{ctrl.message}}
+    </div>

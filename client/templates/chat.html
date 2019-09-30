@@ -1,0 +1,37 @@
+<div ng-controller="chatCtrl as ctrl">
+    <h1>ChatApp</h1>
+
+    <div class="contacts">
+        <h3>Contacts</h3>
+        <div class="bar">
+            <!-- <button ng-click="ctrl.get()">List</button> -->
+            <div ng-repeat="i in name">
+                <p> <button id="nkp" ng-click="ctrl.nameClick(i)">{{i.name}}</button>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat">
+        <p>{{ctrl.nam}}</p>
+
+        <!-- <div id="mario-chat"> -->
+            <div id="chat-window">
+            <div id="outputmsg" ng-repeat='i in text'>
+                {{i.message}}
+
+            </div>
+            <!-- <div id="output"></div> -->
+        </div>
+            <!-- <input id="handle" type="text" placeholder="Handle" /> -->
+            <input id="text"ng-model="ctrl.message" type="text" placeholder="Message" />
+
+            <button ng-click="ctrl.send(ctrl.message)   " id="send">Send</button>
+
+        <!-- </div> -->
+
+    </div>
+
+
+</div>

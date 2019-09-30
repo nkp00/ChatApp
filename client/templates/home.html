@@ -1,0 +1,19 @@
+
+    
+    <div id="div1" ng-controller="chatCtrl as ctrl">
+     
+        <h1>ChatApp</h1>
+        UserId</br> <input ng-model="ctrl.email" type="email" name="userId" placeholder="Enter your email here..." required> </input></br> </br></br>
+        <span> </span>
+        Password</br> <input ng-model="ctrl.password" type="password" name="password" placeholder="Password.."required> 
+        </br> </br>
+        <button ng-click="ctrl.login(ctrl.email,ctrl.password)">Login</button> 
+        <h4>{{ctrl.message}}</h4>
+    
+     
+     <button ng-click="ctrl.routeForgot()">Forgot Password</button></br>
+     <p>New to chatapp signup here</p>
+        <button ng-click="ctrl.routeSignup()">Signup</button>
+        
+    </div>
+  
