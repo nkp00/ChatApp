@@ -9,8 +9,8 @@ var transporter = nodemailer.createTransport({
 });
 
 var mailOptions = {
-  from: 'neerajkp501@gmail.com',
-  to: 'neerajkp501@gmail.com',
+  from: 'sender email',
+  to: 'receiver email',
   subject: 'Forgot password request',
   text: `Hello, please open the following link to proceed \nhttp://localhost:3000/#!/forgot/${token}`
 };
