@@ -3,8 +3,8 @@ var sendemail=(token)=>{
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'neerajkp501@gmail.com',
-    pass: "05021997"
+    user: '',
+    pass: ""
   }
 });
 
